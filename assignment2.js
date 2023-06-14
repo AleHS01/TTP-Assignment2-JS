@@ -234,3 +234,23 @@ function myDeepComparison(objectA, objectB) {
 
   return true;
 }
+
+//moveZeros
+function moveZeros(nums) {
+  let newArray = [];
+  let count = 0;
+
+  for (let num of nums) {
+    if (num !== 0) {
+      newArray.push(num);
+    } else {
+      count++;
+    }
+  }
+
+  for (let i = 0; i < count; i++) {
+    newArray.push(0);
+  }
+
+  return newArray;
+}
